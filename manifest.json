@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "xterm-ctrl-w-capture",
+  "version": "1.0.0",
+  "description": "A simple extension to capture Ctrl+W and send keyboard event to xterm to avoid closing the tab accidentally.",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "commands": {
+    "captured": {
+      "suggested_key": {
+        "default": "Ctrl+W"
+      },
+      "description": "Capture ctrl+w"
+    }
+  }
+}
