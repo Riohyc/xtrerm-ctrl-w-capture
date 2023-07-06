@@ -11,8 +11,7 @@ chrome.commands.onCommand.addListener(function(command) {
 });
 
 function SendKeyboradEvent(){
-  let xtermTextareas = document.getElementsByClassName("xterm-helper-textarea");
-  if(xtermTextareas.length > 0){
-    xtermTextareas[0].dispatchEvent(new KeyboardEvent("keydown", {key: "w", keyCode: 87, ctrlKey: true}));
+  if (document.activeElement.className == "xterm-helper-textarea"){
+    document.activeElement.dispatchEvent(new KeyboardEvent("keydown", {key: "w", keyCode: 87, ctrlKey: true}));
   }
 }
