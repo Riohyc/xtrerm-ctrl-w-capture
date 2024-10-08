@@ -16,6 +16,18 @@
         "default": "Ctrl+W"
       },
       "description": "Capture ctrl+w"
+    },
+    "captured-quit": {
+      "suggested_key": {
+        "default": "Ctrl+Q"
+      },
+      "description": "Capture ctrl+q"
+    },
+    "captured-new-tab": {
+      "suggested_key": {
+        "default": "Ctrl+N"
+      },
+      "description": "Capture ctrl+n"
     }
   }
 }
